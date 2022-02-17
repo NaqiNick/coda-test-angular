@@ -11,10 +11,16 @@ import { MiaCoreModule, MIA_GOOGLE_STORAGE_PROVIDER } from '@agencycoda/mia-core
 import { MiaTableModule } from '@agencycoda/mia-table';
 import { MiaFormModule } from '@agencycoda/mia-form';
 import { MiaLoadingModule } from '@agencycoda/mia-loading';
+import { HomeComponent } from './home/home.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIcon} from '@angular/material/icon';
+import { ConfirmDialogueComponent } from './confirm-dialogue/confirm-dialogue.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ConfirmDialogueComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +33,7 @@ import { MiaLoadingModule } from '@agencycoda/mia-loading';
     MiaTableModule,
     MiaLoadingModule,
     MiaFormModule,
+    MatButtonModule,
   ],
   providers: [
     { 

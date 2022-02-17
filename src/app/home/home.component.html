@@ -1,0 +1,8 @@
+<h2>Clients</h2>
+
+<mia-edit-columns [config]="tableConfig" [miaTable]="tableComp">
+<button mat-flat-button color="primary">Edit Columns</button> 
+</mia-edit-columns>
+<button mat-flat-button color="primary" style="float:right;" (click)="onClickAdd()">+</button>
+<mia-table #tableComp [config]="tableConfig"></mia-table>
+
